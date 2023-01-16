@@ -1,0 +1,10 @@
+*.class
+.DS_Store
+
+a1-basic/.gradle/*
+a1-basic/.idea/*
+a1-basic/build/*
+a1-basic/gradle/*
+a1-basic/gradle.properties
+a1-basic/gradlew
+a1-basic/settings.gradle.kts

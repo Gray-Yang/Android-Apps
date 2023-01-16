@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/allnotes"
+        android:background="@color/gray_400"
+        app:layout_constraintHorizontal_bias="0.0">
+
+
+        <LinearLayout
+                android:layout_width="200dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <TextView
+                      android:id="@+id/Title"
+                      android:text=""
+                      android:maxLines="2"
+                      android:layout_height="20dp"
+                      android:layout_width="match_parent"/>
+
+            <TextView
+                    android:id="@+id/Content"
+                    android:text=""
+                    android:maxLines="2"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/A"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="A"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:backgroundTint="@color/purple_200"
+            />
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1">
+            </Space>
+
+                <Button
+                    android:id="@+id/D"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:backgroundTint="@color/purple_200"
+                />
+            <Space
+                    android:layout_width="3dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1">
+            </Space>
+        />
+
+</LinearLayout>

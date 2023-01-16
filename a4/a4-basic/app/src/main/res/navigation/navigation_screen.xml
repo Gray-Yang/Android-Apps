@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/navigation"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/blankFragment">
+    <fragment android:id="@+id/blankFragment"
+              android:name="ui.assignments.a4notes.ui.main_screen"
+              android:label="fragment_blank"
+              tools:layout="@layout/activity_main">
+        <action android:id="@+id/action_blankFragment_to_otherFragment"
+                app:destination="@id/otherFragment" />
+        <action android:id="@+id/action_blankFragment_to_edit"
+                app:destination="@id/edit" />
+
+    </fragment>
+    <fragment android:id="@+id/otherFragment"
+              android:name="ui.assignments.a4notes.ui.add_screen"
+              android:label="fragment_other"
+              tools:layout="@layout/add_screen">
+        <action android:id="@+id/action_otherFragment_to_blankFragment"
+                app:destination="@id/blankFragment"/>
+        <action android:id="@+id/action_otherFragment_pop"
+                app:popUpTo="@id/otherFragment"
+                app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment android:id="@+id/edit"
+              android:name="ui.assignments.a4notes.ui.edit_screen"
+              android:label="fragment_edit"
+              tools:layout="@layout/edit_screen">
+        <action android:id="@+id/edit_to_blankFragment"
+                app:destination="@id/blankFragment"/>
+        <action android:id="@+id/action_otherFragment_pop"
+                app:popUpTo="@id/edit"
+                app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

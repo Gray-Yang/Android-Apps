@@ -1,0 +1,11 @@
+。DS_Store
+
+a4-basic/.gradle/*
+a4-basic/.idea/*
+a4-basic/build/*
+a4-basic/gradle/*
+a4-basic/gradle.properties
+a4-basic/settings.gradle.kts
+a4-basic/gradlew
+a4-basic/settings.gradle.kts
+a4-basic/build.gradle.kts
